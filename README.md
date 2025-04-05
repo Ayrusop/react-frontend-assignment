@@ -1,70 +1,115 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📘 React Frontend Assignment
 
-## Available Scripts
+This is a React-based Single Page Application (SPA) built as part of a frontend development assignment. It showcases key frontend skills including component-based design, API integration, responsive layout, and loading/error handling using modern tools and libraries.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Reusable React components (Header, Footer, Posts, Weather)
+- ✅ Responsive design using **Bootstrap**
+- ✅ API integration using **Axios**
+  - Fetching posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+  - Fetching weather information from [OpenWeatherMap](https://openweathermap.org/api)
+- ✅ Loading indicators and error handling
+- ✅ Organized project structure and modular code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+react-frontend-assignment/
+├── src/
+│   ├── components/             # Reusable UI components
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── Weather.js
+│   │   └── Posts.js
+│   ├── pages/                  # Page views
+│   │   ├── Home.js
+│   │   └── About.js
+│   ├── services/               # API logic
+│   │   └── api.js
+│   ├── App.js                  # App routing and layout
+│   └── index.js                # Entry point
+├── public/                     # Static files
+├── package.json                # Project config and dependencies
+└── README.md                   # Documentation
 
-### `npm run build`
+### 📘 Component Descriptions:
+- **Header.js**: Displays the header with navigation links.
+- **Footer.js**: Footer with copyright info and links.
+- **Weather.js**: Displays weather info fetched from OpenWeatherMap.
+- **Posts.js**: Fetches and displays a list of posts from JSONPlaceholder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📘 Page Descriptions:
+- **Home.js**: The homepage of the app, showcasing the weather info and recent posts.
+- **About.js**: Provides information about the app or creator.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Getting Started
 
-### `npm run eject`
+### 📦 Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- npm (comes with Node.js)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📥 Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Clone the repository
+git clone https://github.com/your-username/react-frontend-assignment.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Navigate to the project folder
+cd react-frontend-assignment
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🌤️ API Setup
 
-### Code Splitting
+#### OpenWeatherMap API:
+1. Create a free account on [OpenWeatherMap](https://openweathermap.org/api).
+2. Generate an API key.
+3. Create a `.env` file in the root of the project and add your API key:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   REACT_APP_WEATHER_API_KEY=your-api-key-here   
 
-### Analyzing the Bundle Size
+4. In `src/services/api.js`, replace the placeholder with the environment variable:
+   const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+   
+### Run the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open your browser and visit:  
+📍 http://localhost:3000
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## APIs Used
 
-### Deployment
+| #API              | #Endpoint                                          | #Usage                                 |
+|-------------------|----------------------------------------------------|----------------------------------------|
+| JSONPlaceholder   | https://jsonplaceholder.typicode.com/posts         | Fetch dummy posts                      |
+| OpenWeatherMap    | https://api.openweathermap.org                     | Fetch live weather info                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is created for educational/demo purposes. You are free to use and modify it as needed.
+
+---
+
+### Acknowledgements
+
+- React
+- Bootstrap
+- Axios
+- JSONPlaceholder
+- OpenWeatherMap
+
