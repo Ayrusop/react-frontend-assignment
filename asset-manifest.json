@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-frontend-assignment/static/css/main.c8d24275.css",
+    "main.js": "/react-frontend-assignment/static/js/main.d80a0a06.js",
+    "index.html": "/react-frontend-assignment/index.html",
+    "main.c8d24275.css.map": "/react-frontend-assignment/static/css/main.c8d24275.css.map",
+    "main.d80a0a06.js.map": "/react-frontend-assignment/static/js/main.d80a0a06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8d24275.css",
+    "static/js/main.d80a0a06.js"
+  ]
+}
