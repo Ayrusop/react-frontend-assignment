@@ -7,7 +7,7 @@ import About from "./pages/About";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/react-frontend-assignment">
       <Header />
       <div className="container mt-4">
         <Routes>
