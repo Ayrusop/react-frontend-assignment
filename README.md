@@ -5,19 +5,19 @@ This is a React-based Single Page Application (SPA) built as part of a frontend 
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ Reusable React components (Header, Footer, Posts, Weather)
-- ✅ Responsive design using **Bootstrap**
-- ✅ API integration using **Axios**
+-  Reusable React components (Header, Footer, Posts, Weather)
+-  Responsive design using **Bootstrap**
+-  API integration using **Axios**
   - Fetching posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
   - Fetching weather information from [OpenWeatherMap](https://openweathermap.org/api)
-- ✅ Loading indicators and error handling
-- ✅ Organized project structure and modular code
+-  Loading indicators and error handling
+-  Organized project structure and modular code
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 react-frontend-assignment/
 ├── src/
@@ -37,29 +37,29 @@ react-frontend-assignment/
 ├── package.json                # Project config and dependencies
 └── README.md                   # Documentation
 
-### 📘 Component Descriptions:
+###  Component Descriptions:
 - **Header.js**: Displays the header with navigation links.
 - **Footer.js**: Footer with copyright info and links.
 - **Weather.js**: Displays weather info fetched from OpenWeatherMap.
 - **Posts.js**: Fetches and displays a list of posts from JSONPlaceholder.
 
-### 📘 Page Descriptions:
+###  Page Descriptions:
 - **Home.js**: The homepage of the app, showcasing the weather info and recent posts.
 - **About.js**: Provides information about the app or creator.
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
-### 📦 Prerequisites
+###  Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14+ recommended)
 - npm (comes with Node.js)
 
-### 📥 Installation
+###  Installation
 
 # Clone the repository
-git clone https://github.com/your-username/react-frontend-assignment.git
+git clone https://github.com/Ayrusop/react-frontend-assignment.git
 
 # Navigate to the project folder
 cd react-frontend-assignment
